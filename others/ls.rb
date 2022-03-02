@@ -1,7 +1,7 @@
 # 問題: 下記のlsコマンドの出力結果と同じような結果を出力するプログラムを実装せよ
 # mac atcoder (main) % ls
-# B.rb        README.md    hoge.txt    others        wan.xt
-# C.rb        fuga.txt    mya.txt        piyo.txt
+# B.rb        README.md   hoge.txt    others        wan.xt
+# C.rb        fuga.txt    mya.txt     piyo.txt
 
 require 'active_support/core_ext/array/grouping.rb' # TODO: ActiveSupport使わない
 
