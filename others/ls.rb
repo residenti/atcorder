@@ -6,7 +6,8 @@
 require 'active_support/core_ext/array/grouping.rb' # TODO: ActiveSupport使わない
 
 items = Dir.glob('*').sort
-row_length = (items.length / 6.0).ceil
+colum_length = 6.0
+row_length = (items.length / colum_length).ceil
 items_grouped_by_column = items.in_groups_of(row_length, '').map do |column_data|
   max_length = column_data.max { |a, b| a.length <=> b.length }.length
   column_data.map { |item| item.ljust(max_length) }
